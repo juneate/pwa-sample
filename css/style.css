@@ -4,6 +4,16 @@ body {
   color: #222;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu', impact, sans-serif;
+  margin: 0.5em 0;
+}
+
+h1 { font-size: 1.5em; }
+h2 { font-size: 1.25em; }
+h3 { font-size: 1.125em; }
+
+
 .main-heading {
   font-family: 'Ubuntu', impact, sans-serif;
   font-size: 1.25em;
@@ -22,9 +32,8 @@ body {
 .add-task {
   margin: 1em 0;
   display: grid;
-  grid-template-columns: auto 7em;
+  grid-template-columns: auto 6em;
 }
-
 
 .component {
   font-family: 'PT Serif', georgia, serif;
@@ -41,8 +50,6 @@ body {
   background-color: rgb(206, 100, 244);
   color: #fff;
 }
-
-
 
 
 .task-list {
@@ -67,9 +74,24 @@ body {
   padding: 0.25em 1em;
 }
 
-
-
-
+.fixed-footer {
+  position: fixed;
+  width: 100%;
+  background-color: #222;
+  bottom: 0;
+  left: 0;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.fixed-footer li {
+  border: 1px solid #999;
+  text-align: center;
+  line-height: 3;
+}
+.fixed-footer a {
+  color: white
+}
 
 /* .add-task {
   padding: 1em 1em 0 1em;

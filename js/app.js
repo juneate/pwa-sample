@@ -13,7 +13,9 @@ const pageContent = document.getElementById('page');
 // Where can we go?
 const routes = {
   '/': homePage,
-  '/todolist': todoListPage
+  '/todolist': todoListPage,
+  '/credits': creditPage
+  // ADD NEW ROUTES HERE THAT POINT TO VIEWS
 };
 
 // On load of the application
